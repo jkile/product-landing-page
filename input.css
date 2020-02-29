@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Work+Sans&display=swap");
-.container {
+.hero-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: .4fr 1fr 1fr 1fr;
-      grid-template-rows: .4fr 1fr 1fr 1fr;
+  -ms-grid-rows: .4fr .7fr .7fr 1fr;
+      grid-template-rows: .4fr .7fr .7fr 1fr;
   background-color: #574F7D;
   min-height: 100vh;
 }
@@ -31,8 +31,8 @@
   grid-area: 2 / 1 / 4 / 4;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: .4fr .4fr;
-      grid-template-rows: .4fr .4fr;
+  -ms-grid-rows: .7fr .7fr;
+      grid-template-rows: .7fr .7fr;
 }
 
 .block-accent {
@@ -177,7 +177,7 @@
   font-family: "Roboto Mono";
   font-size: 16px;
   color: #DFF0EA;
-  margin-top: -2rem;
+  margin-top: -1.7rem;
   margin-right: 1.5rem;
   margin-left: 6.5rem;
 }
@@ -191,14 +191,48 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2 / 1 / 3 / 3;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   -ms-grid-column-align: right;
       justify-self: right;
+  margin-bottom: 3.9rem;
   margin-right: 1.5rem;
   background-color: #DFF0EA;
   border: none;
+  border-radius: 25px;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F48256;
+  min-height: 60vh;
+}
+
+.skills-header {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 30px;
+  font-family: "Roboto Mono";
+}
+
+.skills-card {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80vw;
+  height: 45vh;
+  border: 2px solid white;
   border-radius: 25px;
 }
 /*# sourceMappingURL=input.css.map */
