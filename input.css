@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Work+Sans&display=swap");
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: .4fr 1.5fr 1fr 1fr;
+      grid-template-rows: .4fr 1.5fr 1fr 1fr;
+  background-color: #574F7D;
+  min-height: 100vh;
+}
+
+.navbar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 /1 / 2 / 4;
+  background-color: #F48256;
+  min-height: 5rem;
+}
+
+.hero {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 1 / 4 / 4;
+  background-color: #DFF0EA;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.block-accent {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #F48256;
+}
+
+.block-secondary {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: #574F7D;
+}
+
+.block-dark {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 2 / 4 / 3;
+  background-color: #4F3A65;
+}
+
+.block-primary-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #95ADBE;
+}
+
+.block-primary-2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: #95ADBE;
+}
+
+.block-primary-3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: #95ADBE;
+}
+
+h1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-area: 1 / 3 / 2 / 8;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin: 1.5rem;
+  font-family: "Roboto Mono";
+  font-size: 116px;
+}
+/*# sourceMappingURL=input.css.map */
