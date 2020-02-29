@@ -15,86 +15,122 @@
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-area: 1 /1 / 2 / 4;
+  grid-area: 1 / 1 / 2 / 4;
   background-color: #F48256;
   min-height: 5rem;
 }
 
 .hero {
+  background-color: #95ADBE;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 2 / 1 / 4 / 4;
-  background-color: #DFF0EA;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: .65fr 1fr;
+      grid-template-rows: .65fr 1fr;
 }
 
 .block-accent {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 1 / 4 / 2;
+  display: none;
   background-color: #F48256;
 }
 
+@media (min-width: 1920px) {
+  .block-accent {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+
 .block-secondary {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 1 / 3 / 2;
+  display: none;
   background-color: #574F7D;
 }
 
+@media (min-width: 1920px) {
+  .block-secondary {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+
 .block-dark {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 2 / 4 / 3;
+  display: none;
   background-color: #4F3A65;
 }
 
+@media (min-width: 1920px) {
+  .block-dark {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
 .block-primary-1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
+  display: none;
   background-color: #95ADBE;
+}
+
+@media (min-width: 1920px) {
+  .block-primary-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+  }
 }
 
 .block-primary-2 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 2 / 3 / 3;
+  display: none;
   background-color: #95ADBE;
+}
+
+@media (min-width: 1920px) {
+  .block-primary-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 3 / 3;
+  }
 }
 
 .block-primary-3 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-area: 3 / 3 / 4 / 4;
+  display: none;
   background-color: #95ADBE;
 }
 
-h1 {
+@media (min-width: 1920px) {
+  .block-primary-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 3 / 4 / 4;
+  }
+}
+
+.title {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 5;
-  grid-area: 1 / 3 / 2 / 8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -102,6 +138,51 @@ h1 {
       justify-self: right;
   margin: 1.5rem;
   font-family: "Roboto Mono";
-  font-size: 116px;
+  font-size: 40px;
+  color: white;
+}
+
+.subtitle {
+  font-family: "Work Sans";
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+  color: #DFF0EA;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-top: 5.5rem;
+  margin-right: 1.5rem;
+  font-size: 18px;
+}
+
+@media (min-width: 920px) {
+  .subtitle {
+    font-size: 25px;
+  }
+}
+
+.work-anchor {
+  height: 2rem;
+  width: 11rem;
+  font-family: "Roboto Mono";
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 1 / 3 / 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-right: 1.5rem;
+  background-color: #DFF0EA;
+  border: none;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=input.css.map */
