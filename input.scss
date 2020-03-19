@@ -15,20 +15,28 @@ $breakpoint-md: 920px;
 $breakpoint-sm: 768px;
 $breakpoint-xs: 375px;
 
+$padding-xl: 15rem;
 
 .hero-container{
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .4fr .7fr .7fr 1fr;
+    grid-template-rows: .25fr .7fr .7fr 1fr;
     background-color: $secondary-color;
     min-height: 100vh;
 }
 .navbar{
+
     grid-area: 1 / 1 / 2 / 4;
     background-color: $accent-color;
     min-height: 5rem;
 }
+.nav-items{
+    display: flex;
+}
+
 .hero{
+
     background-color: $primary-color;
     display: grid;
     grid-area: 2 / 1 / 4 / 4;
@@ -123,6 +131,12 @@ $breakpoint-xs: 375px;
     background-color: $light-color;
     border: none;
     border-radius: 25px;
+    transition: 0.5s;
+}
+.work-anchor:hover{
+    box-shadow: 1px 1px 3px black;
+    background-color: $dark-color;
+    color: $light-color;
 }
 .skills-container{
     display: flex;
@@ -142,6 +156,43 @@ $breakpoint-xs: 375px;
     align-self: center;
     width: 80vw;
     height: 45vh;
-    border: 2px solid white;
+    border: 6px;
+    border-color: $light-color;
+    border-style: solid;
     border-radius: 25px;
+    //box-shadow: 1px 1px 3px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    
+}
+#html-icon{
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+#javascript-icon{
+    grid-area: 1 / 2 / 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+#nodejs-icon{
+    grid-area: 2 / 1 / 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+#react-icon{
+    grid-area: 2 / 2 / 2 / 2;
+    justify-self: center;
+    align-self: center;
+}
+#vue-icon{
+    grid-area: 3 / 1 / 4 / 2;
+    justify-self: center;
+    align-self: center;
+}
+#css-icon{
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: center;
+    align-self: center;
 }
