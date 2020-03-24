@@ -524,6 +524,7 @@ footer {
   padding-right: 1.5rem;
   text-align: left;
   font-size: 18px;
+  line-height: 1.5rem;
 }
 
 .project-container .project-list {
@@ -548,5 +549,42 @@ footer {
 
 .project-container a:hover {
   color: #4F3A65;
+}
+
+.github-header {
+  font-family: "Avenir Next";
+  color: #DFF0EA;
+  font-size: 35px;
+  margin: 3rem;
+  text-align: center;
+}
+
+.github-button {
+  height: 4rem;
+  width: 8rem;
+  border-radius: 5px;
+  font-family: "Avenir Next";
+  font-size: 18px;
+  color: #4F3A65;
+  margin: auto;
+  background-color: #DFF0EA;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+}
+
+.github-button:hover {
+  color: #DFF0EA;
+  background-color: #4F3A65;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+}
+
+.github-button:active {
+  color: #DFF0EA;
+  background-color: #574F7D;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+  border: 2px solid #4F3A65;
 }
 /*# sourceMappingURL=input.css.map */
