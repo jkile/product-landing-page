@@ -44,67 +44,54 @@ $padding-xl: 15rem;
     min-height: 400px;
     margin: auto;
 }
-
-.hero-container{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .25fr .7fr .7fr 1fr;
-    background-color: $secondary-color;
-    min-height: 100vh;
-    box-shadow: inset 0 0 10px #000000;
-}
 .navbar{
-
-    grid-area: 1 / 1 / 2 / 4;
     background-color: $accent-color;
-    min-height: 5rem;
+    height: 6rem;
 }
 .nav-items{
     display: flex;
     justify-content: right;
 }
-a{
-    text-decoration: none;
-    color: $light-color;
-    transition: 0.5s;
-}
-li{
-    font-family: $primary-font;
-    color: $light-color;
-    padding: 1rem;
-    font-size: 2rem;
-    margin-top: 1rem;
-    transition: 0.5s;
-}
-a:hover{
-    color: $dark-color
+.nav-items{
+    a{
+        text-decoration: none;
+        color: $light-color;
+        transition: 0.5s;
+    }
+    li{
+        font-family: $primary-font;
+        color: $light-color;
+        padding: 1rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+        transition: 0.5s;
+    }
+    a:hover{
+        color: $dark-color
+    }
 }
 .hero{
-
+    display: flex;
+    flex-direction: column;
     background-color: $primary-color;
-    display: grid;
-    grid-area: 2 / 1 / 4 / 4;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .7fr .7fr;
-    box-shadow: 0px 8px 10px -8px black;
+    height: 60vh;
+    width: 100vw;
+
 }
 .title{
-    grid-area: 1 / 1 / 2 / 3;
     align-self: center;
     justify-self: center;
-    margin: 1.5rem;
+    margin-top: 8rem;
     font-family: $primary-font;
     font-size: 40px;
     color: white;
 }
 .subtitle{
     font-family: $seconday-font;
-    grid-area: 1 / 1 / 2 / 3;
     color: white;
     align-self: center;
     justify-self: center;
-    margin-top: 5.5rem;
+    margin-top: 1rem;
     font-size: 18px;
     @media (min-width: $breakpoint-md){
         font-size: 25px;
@@ -112,15 +99,12 @@ a:hover{
 
 }
 .hero-description{
-    grid-area: 2 / 1 / 3 / 3;
     justify-self: center;
     text-align: center;
     font-family: $primary-font;
     font-size: 16px;
     color: white;
-    margin-top: -1.7rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 1rem;
 }
 .work-anchor{
     height: 4rem;
@@ -130,7 +114,7 @@ a:hover{
     grid-area: 2 / 1 / 3 / 3;
     align-self: center;
     justify-self: center;
-    margin-bottom: 3.9rem;
+    margin: 1rem;
     background-color: $light-color;
     border: none;
     border-radius: 5px;
@@ -140,6 +124,11 @@ a:hover{
     box-shadow: 1px 1px 3px black;
     background-color: $dark-color;
     color: $light-color;
+}
+.spacer-block{
+    height: 34vh;
+    background-color: $secondary-color;
+    box-shadow: inset 0 0 10px #000000;
 }
 .cards-container{
     width: 100vw;

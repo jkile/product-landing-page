@@ -1,25 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Work+Sans&display=swap");
-.hero-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: .25fr .7fr .7fr 1fr;
-      grid-template-rows: .25fr .7fr .7fr 1fr;
-  background-color: #574F7D;
-  min-height: 100vh;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-          box-shadow: inset 0 0 10px #000000;
-}
-
 .navbar {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 1 / 1 / 2 / 4;
   background-color: #F48256;
-  min-height: 5rem;
+  height: 6rem;
 }
 
 .nav-items {
@@ -31,14 +13,14 @@
           justify-content: right;
 }
 
-a {
+.nav-items a {
   text-decoration: none;
   color: #DFF0EA;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-li {
+.nav-items li {
   font-family: "Avenir Next";
   color: #DFF0EA;
   padding: 1rem;
@@ -48,39 +30,30 @@ li {
   transition: 0.5s;
 }
 
-a:hover {
+.nav-items a:hover {
   color: #4F3A65;
 }
 
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #95ADBE;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 2 / 1 / 4 / 4;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: .7fr .7fr;
-      grid-template-rows: .7fr .7fr;
-  -webkit-box-shadow: 0px 8px 10px -8px black;
-          box-shadow: 0px 8px 10px -8px black;
+  height: 60vh;
+  width: 100vw;
 }
 
 .title {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 2 / 3;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin: 1.5rem;
+  margin-top: 8rem;
   font-family: "Avenir Next";
   font-size: 40px;
   color: white;
@@ -88,18 +61,13 @@ a:hover {
 
 .subtitle {
   font-family: "Work Sans";
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 2 / 3;
   color: white;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-top: 5.5rem;
+  margin-top: 1rem;
   font-size: 18px;
 }
 
@@ -110,20 +78,13 @@ a:hover {
 }
 
 .hero-description {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 2 / 1 / 3 / 3;
   -ms-grid-column-align: center;
       justify-self: center;
   text-align: center;
   font-family: "Avenir Next";
   font-size: 16px;
   color: white;
-  margin-top: -1.7rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 1rem;
 }
 
 .work-anchor {
@@ -141,7 +102,7 @@ a:hover {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-bottom: 3.9rem;
+  margin: 1rem;
   background-color: #DFF0EA;
   border: none;
   border-radius: 5px;
@@ -154,6 +115,13 @@ a:hover {
           box-shadow: 1px 1px 3px black;
   background-color: #4F3A65;
   color: #DFF0EA;
+}
+
+.spacer-block {
+  height: 34vh;
+  background-color: #574F7D;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+          box-shadow: inset 0 0 10px #000000;
 }
 
 .cards-container {
