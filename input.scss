@@ -78,7 +78,10 @@ $padding-xl: 15rem;
     width: 100vw;
 
 }
-.title{
+.hero{
+
+}
+.hero-title{
     align-self: center;
     justify-self: center;
     margin-top: 8rem;
@@ -86,7 +89,7 @@ $padding-xl: 15rem;
     font-size: 40px;
     color: white;
 }
-.subtitle{
+.hero-subtitle{
     font-family: $seconday-font;
     color: white;
     align-self: center;
@@ -283,5 +286,75 @@ footer{
     height: 10vh;
     background-color: $accent-color;
 }
+.portfolio-container{
+    width: 100vw;
+    background-color: $secondary-color;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    .portfolio-title{
+        font-family: $primary-font;
+        font-size: 40px;
+        color: $light-color;
+        text-align: center;
+        padding: 3rem;
+    }
+
+}
+
+.project-container{
+    width: 80vw;
+    background-color: $primary-color;
+    border-radius: 15px;
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    .project-title{
+        font-family: $primary-font;
+        color: $light-color;
+        font-size: 35px;
+        padding: 1.5rem;
+    }
+    .project-subtitle{
+        font-family: $primary-font;
+        color: $light-color;
+        padding: 1.5rem;
+        font-size: 30px;
+    }
+    .project-description{
+        font-family: $primary-font;
+        color: $light-color;
+        padding-left: 2.5rem;
+        padding-right: 1.5rem;
+        text-align: left;
+        font-size: 18px;
+    }
+    .project-list{
+        padding-left: 2.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-family: $primary-font;
+        color: $light-color;
+        font-size: 18px;
+    }
+    li{
+        padding: .3rem;
+    }
+    a{
+        text-decoration: none;
+        color: $light-color;
+        transition: 0.5s;
+    }
+    a:hover{
+        color: $dark-color;
+    }
+}
+
+
 
 
